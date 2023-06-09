@@ -7,84 +7,85 @@
 // - Per farlo puoi utilizzare il terminale Bash, quello di VSCode o quello del tuo sistema operativo (se utilizzi macOS o Linux)
 // */
 
-// // JS Basics
+// JS Basics
 
-// /* ESERCIZIO A
-//   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
+/* ESERCIZIO A
+  Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
+*/
+
+let sum = 10 + 20;
+console.log(sum);
+/* ESERCIZIO B
+  Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
+*/
+
+// /* ESERCIZIO C
+//   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 // */
+let me = {     // get what i want this time.....cit
+  name: "Vincenzo",
+  surname: "Cicero",
+  age: "32",
+};
 
-// // let sum = 10 + 20;
-// // console.log(sum);
-// // /* ESERCIZIO B
-// //   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
-// // */
 
-// // /* ESERCIZIO C
-// //   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
-// // */
-// // let me = {
-// //   name: "Vincenzo",
-// //   surname: "Cicero"
-// //   age: "32"
-// // }
 // /* ESERCIZIO D
 //   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 // */
-
+delete me.age;
+console.log(me)
 // /* ESERCIZIO E
 //   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 // */
 
 
-// // let persona = {
-// //   nome: "Vincenzo",
-// //   cognome: "Cicero",
-// //   età: 32
-// // };
+// let persona = {
+//   nome: "Vincenzo",
+//   cognome: "Cicero",
+//   età: 32
+// };
 
-// // // Skill che non ho
-// // persona.skills = ["JavaScript", "Python", "Java", "C++"];
+// persona.skills = ["JavaScript", "Python", "Java", "C++"];
 
-// // console.log(persona);
-// /* ESERCIZIO F
-//   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
-// */
+// console.log(persona);
+/* ESERCIZIO F
+  Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
+*/
+let persona = {
+  nome: "Vincenzo",
+  cognome: "Cicero",
+  età: 32,
+  skills: ["JavaScript", "Python", "Java", "C++"]
+};
+console.log(persona)
+/* ESERCIZIO G
+  Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
+*/
 
-// /* ESERCIZIO G
-//   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
-// */
-// // Oggetto "me" con l'array "skills"
-// // cit The Smith ---> 
-// //   let me = {
-// //   nome: "Vincenzo",
-// //   cognome: "Cicero",
-// //   età: 32
-// //   skills: ["JavaScript", "Python", "Java", "C++"]
-// // };
 
-// // me.skills.pop();
-// // console.log(me);
+me.skills.pop();
+console.log(me);
 
-// /* ESERCIZIO 1
-//   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
-// */
-// // function dice() {
-// //   return Math.floor(Math.random() * 6) + 1;
-// // }
+/* ESERCIZIO 1
+  Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
+*/
+// function dice() {
+//   return Math.floor(Math.random() * 6) + 1;
+// }
 
-// // console.log(dice());
-// /* ESERCIZIO 2
-//   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
-// */
-// // function whoIsBigger(num1, num2) {
-// //   if (num1 > num2) {
-// //     return num1;
-// //   } else {
-// //     return num2;
-// //   }
-// // }
+// console.log(dice());
+/* ESERCIZIO 2
+  Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
+*/
+// function whoIsBigger(num1, num2) {
+//   if (num1 > num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+// }
 
-// // console.log(whoIsBigger(5, 10)); // Stampa 10
+// // console.log(whoIsBigger(1, 23)); // Stampa 23
 // /* ESERCIZIO 3
 //   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
@@ -101,12 +102,21 @@
 //   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 // */
 
+
+// BLOCCATO 
+// let deleteOne = function(stringa,){
+//   if (stringa);{
+//     return slice()
+//   }
+  
+//   //
+// }
 // /* ESERCIZIO 5
  
 // Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 // Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 // */
-// // Qua dovrei usare Replace() ma non sono in grado al momento
+// // Qua dovrei usare Replace() ma non sono in grado 
 
 
 
@@ -191,10 +201,10 @@
 // */
 // function selectContainer() {
 //   const container = document.getElementById("container");
-//   return container;
+//   
 // }
 
-// console.log(selectContainer());  
+//  
 // /* ESERCIZIO 21
 //   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 // */
@@ -203,7 +213,7 @@
 //   return tdElements;
 // }
  
-// console.log(selectTdElements());  
+//  
 // /* ESERCIZIO 22
 //   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 // */
@@ -217,10 +227,10 @@
 // /* ESERCIZIO 23
 //   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 // */
-// // function linkRosso() {
+// //BLOCCATO function linkRosso() {
 // //   const links = document.querySelectorAll("a");
 // //   for (let i = 0; i < links.length; i++) {
-// //     links[i].style.backgroundColor = "red";
+// //     links.style.backgroundColor = "red";
 // //   }
 // // }
 
@@ -241,7 +251,7 @@
 // */
 // function svuota() {
 //   const myList = document.getElementById("myList");
-//   myList.innerHTML = "";
+//   myList.innerHTML = ("");
 // }
 
 // svuota(); 
@@ -251,7 +261,7 @@
 // function trClass() {
 //   const trElementi = document.getElementsByTagName("tr");
 //   for (let i = 0; i < trElementi.length; i++) {
-//     trElementi[i].classList.add("test");
+//     
 //   }
 // }
 
